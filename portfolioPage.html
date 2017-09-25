@@ -1,0 +1,181 @@
+<!-- This is a portfolio page for Dhanshree Sonar
+Created by Dhanshree Sonar. -->
+<!DOCTYPE HTML SYSTEM>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=“viewport” content=“width=device-width,initial-scale=1”>
+  <title>Dhanshree Sonar</title>
+  <script src ="js/jsScript.js"></script>
+  <link rel="stylesheet" href="css/styleSheet.css">
+  <link rel="stylesheet" media="screen and (max-width: 360px) and (max-height: 640px)" href="css/styleSheetMobile.css">
+</head>
+
+<body onload="addEventsToElements()">
+  <!-- Setting sidebar for menu.-->
+  <section  class="sideBar fontNames">
+      <img src="img/Dhanshree.jpg" alt="Dhanshree Sonar"  class="profilePicture">
+      <label class="menuOptions fontNames" id="about">About</label>
+      <label class="menuOptions fontNames" id="skills">Skills</label>
+      <label class="menuOptions fontNames" id="work">Work</label>
+      <label class="menuOptions fontNames" id="hobbies">Hobbies</label>
+      <label class="menuOptions fontNames" id="contact">Contacts</label>
+  </section>
+
+  <!-- Setting work panel where data will be displayed based on option clicked.-->
+  <section id="portfolioWorkPanel">
+      <!--
+        All sections for all menu options.
+        Initially all the sections will be hidden, based on menu clicked the section will be displayed.
+      -->
+
+      <!-- This is About section where about information will be displayed. -->
+      <section id="aboutSection" class="fontNames fontColors">
+            I wish to work in an organization where I can put my share of contribution to make it successful
+            and to work as a key player in challenging and creative environment.<br><br>
+
+            Since 2011, I have been working in IT industry.  I have bachelor’s degree in Computer Engineering
+            and worked in
+            <img src="img/about/ibm-logo.png" alt="IBM Company" class="aboutLogos">
+            as an Application Developer.<br><br>
+
+            Recently I developed interest in Full Stack Web Development and I joined
+            <img src="img/about/udacity-logo.png" alt="Udacity" class="aboutLogos">
+            program to professionally present myself as a Full Stack Web Developer.<br><br>
+      </section>
+
+      <!-- This is Skills section where overview of skills will be displayed to user in horizontal bars. -->
+      <section id="skillsSection">
+        <div class="skillOverview fontNames fontColors">
+          Overview of skills and skill levels
+        </div><br>
+        <!-- HTML skill % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">HTML</div>
+          <div class="currentProgress widthAttrHTML"><b>80%</b></div>
+        </div><br>
+        <!-- CSS skill % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">CSS</div>
+          <div class="currentProgress widthAttrCSS"><b>75%</b></div>
+        </div><br>
+        <!-- JavaScript skill % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">Javascript</div>
+          <div class="currentProgress widthAttrJavascript"><b>85%</b></div>
+        </div><br>
+        <!--  PHP % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">PHP</div>
+          <div class="currentProgress widthAttrPHP"><b>55%</b></div>
+        </div><br>
+        <!-- SQL skill % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">SQL</div>
+          <div class="currentProgress widthAttrSQL"><b>70%</b></div>
+        </div><br>
+        <!-- XML skill % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">XML</div>
+          <div class="currentProgress widthAttrXML"><b>55%</b></div>
+        </div><br>
+        <!-- Shell Scripting skill % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">ShellScript</div>
+          <div class="currentProgress widthAttrShellScrpting"><b>60%</b></div>
+        </div><br>
+        <!-- Pega skill % -->
+        <div class="progressBar">
+          <div class="skillNames fontNames fontColors">Pega</div>
+          <div class="currentProgress widthAttrPega"><b>85%</b></div>
+        </div><br>
+      </section>
+
+      <!-- This is a Work section.-->
+      <section id="workSection">
+        <div class="workImagesSections fontNames fontColors">
+          <figure class="workImages">
+            <img src="img/work/Movie-trailor-website.png" alt="Movie Trailor Website" class="workImage">
+            <figcaption><a href="https://github.com/Dhanshree-Sonar/Movie-Website" target="_blank">GitHub Repository</a></figcaption>
+          </figure>
+          <div class="workDescription">
+            This project is a part of Udacity curriculum.
+            This website has a list of movies along with their plot summary. You can click any movie image
+            and it will play trailer for that movie. This site will help you decide whether you want
+            to watch that particular movie or not, by showing its trailer.
+          </div>
+        </div>
+
+        <div class="workImagesSections fontNames fontColors">
+          <figure class="workImages">
+            <img src="img/work/charades.png" alt="Charades" class="workImage">
+            <figcaption><a href="https://github.com/Dhanshree-Sonar/Charades" target="_blank">GitHub Repository</a></figcaption>
+          </figure>
+          <div class="workDescription">
+            Charades is a fun word-guessing game for all ages and parties. You have to "act out"
+            a phrase/word without speaking, while one member of your team try to guess what the phrase/word is.
+          </div>
+        </div>
+      </section>
+
+      <!-- This is a Hobbeis section. -->
+      <section id="hobbiesSection">
+        <div class="hobbies fontNames fontColors" >
+          <img src="img/hobbies/coding.gif" alt="Coding" class="hobbyImage">
+          <span>Coding</span>
+        </div>
+        <div class="hobbies fontNames fontColors" id="hobbiesCoding">
+          <img src="img/hobbies/Dancing.gif" alt="Dancing" class="hobbyImage">
+          <span>Dancing</span>
+        </div>
+        <div class="hobbies fontNames fontColors">
+          <img src="img/hobbies/skating.gif" alt="Skating" class="hobbyImage">
+          <span>Skating</span>
+        </div>
+        <div class="hobbies fontNames fontColors">
+          <img src="img/hobbies/traveling.gif" alt="Traveling" class="hobbyImage">
+          <span>Traveling</span>
+        </div>
+      </section>
+
+      <!-- This is a Contact section where different social media links are provided. -->
+      <section id="contactSection">
+        <div class="forFlexing">
+        <div class="contact fontNames fontColors" >
+          <a href="https://twitter.com/Dhanshree_Sonar" target="_blank">
+            <img src="img/contact/twitter-logo.png" alt="twitter logo" class="contactImage">
+          </a>
+        </div>
+        <div class="contact fontNames fontColors" >
+          <a href="https://www.linkedin.com/in/dhanshree-sonar-3ba95515/" target="_blank">
+            <img src="img/contact/linkedin-logo.png" alt="linkedin logo" class="contactImage">
+          </a>
+        </div>
+        <div class="contact fontNames fontColors" >
+          <a href="https://github.com/Dhanshree-Sonar" target="_blank">
+            <img src="img/contact/github-logo.png" alt="github logo" class="contactImage">
+          </a>
+        </div>
+        <div class="contact fontNames fontColors" >
+          <a href="mailto:sonardhanshree@gmail.com" target="_blank">
+            <img src="img/contact/email-logo.png" alt="email logo" class="contactImage">
+          </a>
+        </div>
+        <div class="contact fontNames fontColors" >
+          <a href="https://www.facebook.com/dhanshree.sonar" target="_blank">
+            <img src="img/contact/facebook-logo.png" alt="facebook logo" class="contactImage">
+          </a>
+        </div>
+        <div class="contact fontNames fontColors" >
+          <a href="https://plus.google.com/u/0/105149688625215052847" target="_blank">
+            <img src="img/contact/googleplus-logo.png" alt="googleplus logo" class="contactImage">
+          </a>
+        </div>
+      </div>
+      </section>
+
+    </section>
+</body>
+
+</html>

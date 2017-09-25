@@ -1,0 +1,69 @@
+/*  This stylesheet is created for responsive behaviour.
+    Nexus 5, which is 360X640 device, is considered for styling contents.
+*/
+
+.messageForUser{
+  font-size: 300%;
+}
+
+.sideBar{
+  width: 100%; height: 20%;
+  display: flex;
+  font-size: 100%;
+  text-align: center;
+  float: none;
+  align-items: flex-end;
+}
+
+.menuOptions{
+  font-size: 200%;
+  height: 20%;
+  position: relative;
+}
+
+#about, #skills, #work, #hobbies, #contact{
+  width: 16%;
+  display: inline-block;
+  float: right;
+}
+
+.profilePicture{
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  margin: 0%
+}
+
+#portfolioWorkPanel{
+  width: 100%; height: 80%;
+}
+
+#aboutSection, .skillOverview{
+  font-size: 300%;
+}
+
+.skillNames{
+  font-size: 200%;
+  width: 20%;
+}
+
+.workImages{
+  width: 70%; height: 30%;
+  float: none;
+}
+
+.workImagesSections{
+  font-size: 300%;
+}
+
+.hobbies{
+  font-size: 300%;
+}
+
+.contact{
+  width: 35%; height: 32%;
+  margin: 2.5%; padding: 2.5%;
+}

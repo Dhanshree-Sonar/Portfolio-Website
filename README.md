@@ -4,15 +4,14 @@ This is a portfolio website. On a first page, it has little fun-game to play. On
 ## File List
 1. index.html
 2. portfolioPage.html
-3. styleSheet.css
-4. jsScript.js
+3. css folder
+4. js folder
 5. README.md
 6. img folder
-7. video folder
   
 ## How to run
 
-1. Place index.html, portfolioPage.html, styleSheet.css, jsScript.js, img folder and video folder at one location.
+1. Place index.html, portfolioPage.html, css folder, js folder and img folder at one location.
 2. Open index.html
 3. It will open a webpage.
 

@@ -1,0 +1,200 @@
+/*  Creating circles using <div>. Setting animation for circles.  */
+.bubbles {
+   border-radius: 50%;
+   position: fixed;
+   animation: moveCircles 5s ease-in-out infinite;
+}
+
+/*  Setting animation for circles. */
+@keyframes moveCircles {
+  0% {  transform: scale(1);
+        background: linear-gradient(to right, rgba(217, 179, 255,0.2), rgba(217, 179, 255,0.6));  }
+
+  50% { transform: scale(1.5);
+      background: linear-gradient(to right, rgba(217, 179, 255,0.2), rgba(217, 179, 255,0.6));  }
+
+  100% {  transform: scale(1);
+          background: linear-gradient(to right, rgba(217, 179, 255,0.2), rgba(217, 179, 255,0.6));  }
+}
+
+.fontNames{font-family: "Calibri","Verdana","Times New Roman", Times, serif;}
+.fontColors{color: #400080;}
+
+/*  Message for user asking for clicking the circles, if they can ;)  */
+.messageForUser{
+  font-size: 150%;
+  z-index: 5;
+}
+
+/*  Name settings */
+.name{
+  z-index: 4;
+  text-align: center;
+  font-size: 550%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: popupText 1s linear 1;
+}
+/*  Name animation  */
+@keyframes popupText {
+  0% {  font-size: 0% }
+  25% { font-size: 25%  }
+  50% { font-size: 50% }
+  100% {  font-size: 100% }
+}
+
+body{
+  margin: 0%;
+  background-image: url(../img/background.png);
+  background-size: 100% 100%;
+  border: solid #400080;
+  min-width: 600px;
+  min-height: 500px;
+}
+
+#workPanelSection{
+  width: 100%; height: 100%;
+}
+
+/* Sidebar settings*/
+.sideBar{
+  width: 20%; height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  color: white;
+  border: solid #400080;
+  font-size: 100%;
+  float: left;
+  text-align: center;
+}
+
+.profilePicture{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border: solid #400080;
+}
+
+.menuOptions{
+  color: white;
+  font-size: 150%;
+  width: 100%;
+  background: linear-gradient(#400080, #8c1aff);
+  text-align: center;
+  min-width: 48px; min-height: 48px;
+  border: solid #400080;
+  box-sizing: border-box;
+}
+
+/* Work panel setting */
+#portfolioWorkPanel{
+  width: 80%; height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: scroll;
+}
+
+/* Menu options section settings. */
+#skillsSection, #workSection, #hobbiesSection, #contactSection, #aboutSection{
+  width: 100%; height: 100%;
+  box-sizing: border-box;
+  display: none;
+  padding: 10%;
+}
+
+/* About section settings. */
+#aboutSection{
+  width: 100%;
+  box-sizing: border-box;
+  display: none;
+  font-size: 200%;
+  text-align: center;
+}
+
+.aboutLogos{
+  width:10%; height:5%;
+  float: inherit;
+}
+
+/* Skills section settings. */
+.progressBar{
+  width: 100%;
+  border: solid #400080;
+  background-color: white;
+  border-radius: 10px;
+}
+.currentProgress{
+  height: 6%;
+  color: white;
+  background: linear-gradient(#400080, #8c1aff);
+  text-align: right;
+}
+.widthAttrHTML{width: 80%;}
+.widthAttrCSS{width: 75%;}
+.widthAttrJavascript{width: 85%;}
+.widthAttrPHP{width: 55%;}
+.widthAttrSQL{width: 70%;}
+.widthAttrXML{width: 55%;}
+.widthAttrShellScrpting{width: 60%;}
+.widthAttrPega{width: 85%;}
+
+.skillNames{
+  width: 10%; height: 6%;
+  float: left;
+  background-color: white;
+  text-align: center;
+  border-color: #400080;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.skillOverview{
+  font-size: 150%;
+  text-align: center;
+  padding: 1%;
+}
+
+/* Work sections settings. */
+.workImages{
+  width: 35%; height: 35%;
+  float: left;
+  position:inherit;
+  font-size: 80%;
+}
+.workImagesSections{
+  float: left;
+  border: dotted #400080;
+  font-size: 180%;
+  margin: 1%; padding: 1%;
+}
+.workDescription{
+  vertical-align: middle;
+  text-align: justify;
+  padding: 1%;
+}
+
+/* Hobbies section settings. */
+.hobbies{
+  width: 40%; height: 40%;
+  margin: 2%; padding: 2%;
+  display: inline-block;
+  font-size: 200%;
+  text-align: center;
+}
+.hobbyImage, .contactImage, .workImage{
+  width: 100%; height: 100%;
+}
+
+/* Contact section settings. */
+.contact{
+  width: 20%; height: 35%;
+  margin: 2%; padding: 2%;
+  font-size: 150%;
+  text-align: center;
+}
+
+.forFlexing{
+  display: flex;
+  flex-wrap: wrap;
+}
